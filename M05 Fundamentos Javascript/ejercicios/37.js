@@ -3,6 +3,11 @@
 function redondearNumero(num) {
    // Redondea "num" al entero más próximo y retórnalo.
    // Tu código:
+
+return Math.round(num);
 }
+
+var resultado = redondearNumero(11.8);
+console.log(resultado);
 
 module.exports = redondearNumero;
