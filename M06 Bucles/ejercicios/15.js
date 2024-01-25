@@ -6,6 +6,18 @@ function obtenerDiaSemana(numero) {
   // Si el número no corresponde a un día de la semana, retorna
   // el string "No es un dia de la semana"
   // Tu código:
+  
+  var semana = ["lunes", "martes" , "miércoles", "jueves", "viernes", "sábado", "domingo"];
+  
+  if (numero >= 1 && numero <= 7 && Number.isInteger(numero)) {
+    var diaSemana = semana[numero -=1];
+    var diaFormat = diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1).replace("é", "e").replace("á", "a");
+    return diaFormat;
+  } else {
+    return "No es un dia de la semana";
+  }; 
 }
+var dia = obtenerDiaSemana(3);
+console.log(dia);
 
 module.exports = obtenerDiaSemana;
