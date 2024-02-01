@@ -6,15 +6,15 @@ function sumarHastaNConBreak(n) {
   var suma = 0
   for (var i = 1; i <= n; i++) {
     suma = suma + i;
-    if (suma > 100) {
-      break;
-    };
-    
+    if (suma > 6000) {
+     break;
+    }; 
+     
     console.log(suma);
   }
   return suma;
-}
- var reultado = sumarHastaNConBreak(20);
+};
+ var reultado = sumarHastaNConBreak(200);
  console.log(reultado);
 
 
