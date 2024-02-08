@@ -4,7 +4,7 @@ function contarElementosMayoresA10(array) {
   var newArray = array.filter(num => {
     return num > 10;   
   });
-  return newArray.length;//return {cantidad : newArray.length, elementos : newArray};
+  return newArray.length; //return {cantidad : newArray.length, elementos : newArray};
 }
 var resultado = contarElementosMayoresA10([1, 2, 20, 4, 55, 776]);
 console.log(resultado)

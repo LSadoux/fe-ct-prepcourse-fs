@@ -3,7 +3,7 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   var newArray = resultadosTest.reduce((acum, eleAct, indice) => {
     console.log( `elemento actual:  ${eleAct}, indice: ${indice}, acumulador: ${acum} `);
-   return acum + eleAct;
+    return acum + eleAct;
   }, 0);
   var prom;
   return  prom = newArray / resultadosTest.length;

@@ -3,9 +3,9 @@ function encontrarIndiceMayor(array) {
   // Devuelve el valor de este índice.
   // Tu código:
 
-  // var indiceMayor = array.reduce(function(indiceMax, elementoActual, currentIndex, arr) {
-  // return elementoActual > arr[indiceMax] ? currentIndex : indiceMax;
-  //}, 0);
+/*  var indiceMayor = array.reduce((indiceMay, elementoActual, indiceActual, arreglo) => {
+  return elementoActual > arreglo[indiceMay] ? indiceActual : indiceMay;
+  }, 0); */
 
   var indiceMayor = 0;
   for (var i = 1; i < array.length; i++) {
@@ -15,7 +15,7 @@ function encontrarIndiceMayor(array) {
   }
   return indiceMayor;
 }
-var resultado = encontrarIndiceMayor([30, 2, 60, 4, 55, 7]);
+var resultado = encontrarIndiceMayor([30, 2, 60, 4, 99, 7]);
 console.log(resultado);
 
 module.exports = encontrarIndiceMayor;

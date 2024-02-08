@@ -6,13 +6,23 @@ function multiplicarArgumentos() {
 
   if (arguments.length === 0) {
     return 0;
-  } 
+  } else if (arguments.length === 1) {
+    // Verificar si el único argumento es un array
+    if (Array.isArray(arguments[0])) {
+      return arguments[0].reduce((acumulador, elemento, indice) => acumulador * elemento, 1); //console.log(`elemento act: ${elemento}, indice: ${indice}, acumulador: ${acumulador}`);
+    } else {
+      return arguments[0];
+    };
+  };
+
+  // Caso general con múltiples argumentos
+
   var newArray = Array.from (arguments).reduce((acumulador, elemento) => {
-     return acumulador * elemento;
+    return acumulador * elemento;
   }, 1);
   return newArray;
 }
-var resultado = multiplicarArgumentos(80, 90, 75, 95, 80);
+var resultado = multiplicarArgumentos([80, 90, 75, 95, 80]);
 console.log(resultado);
 
 module.exports = multiplicarArgumentos;
