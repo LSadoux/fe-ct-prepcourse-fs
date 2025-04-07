@@ -8,6 +8,10 @@ function esVocal(letra) {
   // "n" ---> "Dato incorrecto"
   // "texto largo" ---> "Dato incorrecto"
   // Tu código:
+
+  let vocales = "aeiouAEIOU"; 
+  return letra.length > 1 ? "Dato incorrecto" : vocales.includes(letra) ? "Es vocal" :"Dato incorrecto" ;
+
 }
 
 module.exports = esVocal;
